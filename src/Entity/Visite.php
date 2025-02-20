@@ -64,6 +64,11 @@ class Visite
         return $this;
     }
 
+     public function getDatecreation(): ?\DateTimeInterface
+    {
+        return $this->datecreation;
+    }
+    
     public function getDatecreationString(): string
     {
         if($this->datecreation == null){
